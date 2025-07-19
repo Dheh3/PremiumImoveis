@@ -64,11 +64,11 @@ export function HeroSection() {
         
         {/* Trust Indicators */}
         <div className=" flex flex-wrap justify-center items-center gap-8 mt-12 opacity-80 pb-10">
-          <div className="flex items-center text-background/70">
+          <div className="flex items-center text-background/90">
             <Users className="w-5 h-5 mr-2" />
             <span className="text-sm">Mais de 10.000 clientes atendidos</span>
           </div>
-          <div className="flex items-center text-background/70">
+          <div className="flex items-center text-background/90">
             <Award className="w-5 h-5 mr-2" />
             <span className="text-sm">Prêmio Melhor Imobiliária 2023</span>
           </div>
