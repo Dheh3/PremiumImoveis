@@ -70,11 +70,11 @@ export function PropertySearch() {
       </div>
       
       <div className="flex flex-col sm:flex-row gap-3">
-        <Button variant="premium" size="sm" className="flex-2">
+        <Button variant="luxury" size="sm" className="flex-2">
           <Search className="w-5 h-5 mr-2" />
           Buscar Imóveis
         </Button>
-        <Button variant="outline" size="sm" >
+        <Button variant="premium" size="sm" >
           Filtros Avançados
         </Button>
       </div>
