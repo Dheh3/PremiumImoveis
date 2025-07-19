@@ -1,3 +1,3 @@
-Texto do titulo cortado
-Botões que não ficam dentro do container
-Cor das letras com pouco contraste
+Texto do titulo cortado <br>
+Botões que não ficam dentro do container <br>
+Cor das letras com pouco contraste<br>
