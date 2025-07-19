@@ -9,7 +9,7 @@ export function PropertySearch() {
     <Card className="w-full max-w-4xl mx-auto p-6 bg-card/95 backdrop-blur-md shadow-strong border-0 animate-fade-in-up">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Localização</label>
+          <label className="text-sm font-medium text-foreground">Localização</label>
           <div className="relative">
             <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
             <Input 
@@ -20,11 +20,11 @@ export function PropertySearch() {
         </div>
         
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Tipo</label>
+          <label className="text-sm font-medium text-foreground">Tipo</label>
           <Select>
             <SelectTrigger className="bg-background/50 border-border/50 focus:bg-background">
               <Home className="w-4 h-4 mr-2 text-muted-foreground" />
-              <SelectValue placeholder="Tipo de imóvel" />
+              <SelectValue className="text-muted-foreground" placeholder="Tipo de imóvel" />
             </SelectTrigger>
             <SelectContent className="bg-popover border-border/50">
               <SelectItem value="apartamento">Apartamento</SelectItem>
@@ -37,7 +37,7 @@ export function PropertySearch() {
         </div>
         
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Preço</label>
+          <label className="text-sm font-medium text-foreground">Preço</label>
           <Select>
             <SelectTrigger className="bg-background/50 border-border/50 focus:bg-background">
               <DollarSign className="w-4 h-4 mr-2 text-muted-foreground" />
@@ -54,7 +54,7 @@ export function PropertySearch() {
         </div>
         
         <div className="space-y-2">
-          <label className="text-sm font-medium text-muted-foreground">Quartos</label>
+          <label className="text-sm font-medium text-foreground">Quartos</label>
           <Select>
             <SelectTrigger className="bg-background/50 border-border/50 focus:bg-background">
               <SelectValue placeholder="Nº quartos" />
@@ -69,12 +69,12 @@ export function PropertySearch() {
         </div>
       </div>
       
-      <div className="flex gap-3">
-        <Button variant="premium" size="lg" className="flex-1">
+      <div className="flex flex-col sm:flex-row gap-3">
+        <Button variant="premium" size="sm" className="flex-2">
           <Search className="w-5 h-5 mr-2" />
           Buscar Imóveis
         </Button>
-        <Button variant="outline" size="lg">
+        <Button variant="outline" size="sm" >
           Filtros Avançados
         </Button>
       </div>

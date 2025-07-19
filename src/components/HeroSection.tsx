@@ -5,7 +5,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
@@ -18,7 +18,7 @@ export function HeroSection() {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 text-center pb-20">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-background mb-6 leading-tight">
             Encontre Seu
@@ -36,7 +36,7 @@ export function HeroSection() {
               <TrendingUp className="w-5 h-5 mr-2" />
               Explorar Imóveis
             </Button>
-            <Button variant="hero" size="xl">
+            <Button variant="secondary" size="xl">
               <Play className="w-5 h-5 mr-2" />
               Assistir Tour Virtual
             </Button>
@@ -63,7 +63,7 @@ export function HeroSection() {
         <PropertySearch />
         
         {/* Trust Indicators */}
-        <div className="flex flex-wrap justify-center items-center gap-8 mt-12 opacity-80">
+        <div className=" flex flex-wrap justify-center items-center gap-8 mt-12 opacity-80 pb-10">
           <div className="flex items-center text-background/70">
             <Users className="w-5 h-5 mr-2" />
             <span className="text-sm">Mais de 10.000 clientes atendidos</span>
@@ -76,7 +76,7 @@ export function HeroSection() {
       </div>
       
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce ">
         <div className="w-6 h-10 border-2 border-background/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-background/70 rounded-full mt-2"></div>
         </div>
